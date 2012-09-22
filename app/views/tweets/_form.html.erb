@@ -1,0 +1,50 @@
+<%= form_for @tweet, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :tilte, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :tilte, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :description, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :description, :class => 'text_area' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :user, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :user, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :hashtag, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :hashtag, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :id_timeline, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :id_timeline, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :avatar, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :avatar, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :url, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :url, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                tweets_path, :class => 'btn' %>
+  </div>
+<% end %>
