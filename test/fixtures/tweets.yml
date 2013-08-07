@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tilte: MyString
+  description: MyText
+  user: MyString
+  hashtag: MyString
+  id_timeline: 1
+  avatar: MyString
+  url: MyString
+
+two:
+  tilte: MyString
+  description: MyText
+  user: MyString
+  hashtag: MyString
+  id_timeline: 1
+  avatar: MyString
+  url: MyString
